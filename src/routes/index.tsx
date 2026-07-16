@@ -31,7 +31,7 @@ const features = [
 
 function Index() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 animate-fade-in">
       <div className="mb-8 flex flex-col gap-2 animate-fade-in">
         <div className="inline-flex items-center gap-1.5 self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
           <Sparkles className="h-3 w-3" /> Session-only · No data stored
@@ -47,7 +47,7 @@ function Index() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((f) => (
           <Link key={f.to} to={f.to} className="group">
-            <Card className="h-full transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
+            <Card className="h-full transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-lg">
               <CardHeader>
                 <div className="mb-2 grid h-10 w-10 place-items-center rounded-lg bg-primary/10 text-primary">
                   <f.icon className="h-5 w-5" />
