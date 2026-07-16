@@ -55,7 +55,7 @@ function ResearchPage() {
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8 animate-enter">
       <div className="mb-6 flex items-center gap-3 animate-fade-in">
         <div className="grid h-10 w-10 place-items-center rounded-lg bg-primary/10 text-primary">
           <BookOpen className="h-5 w-5" />
